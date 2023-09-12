@@ -10,3 +10,10 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
+
+aliyun:
+  oss:
+    endpoint: https://oss-cn-hangzhou.aliyuncs.com
+    accessKeyId: LTAI5tKqtT1pFQ6w6dMxXuDv
+    accessKeySecret: tg9bV2blaQ4pjVLFaJFNkDwfKjsaJM
+    bucketName: book-picture-finalpoint
