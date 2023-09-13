@@ -13,7 +13,7 @@ public class Book {
     private Integer ID;
     private String bookName;
     private String author;
-    private Short bookStatus;
+    private String bookStatus;
     private String mainType;
     private String  secondType;
     private Double wordCounts;

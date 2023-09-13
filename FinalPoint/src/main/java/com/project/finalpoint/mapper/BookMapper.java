@@ -9,9 +9,11 @@ import java.util.List;
 
 @Mapper
 public interface BookMapper {
-    @Select("select * from book")
+    @Select("select * from book_new")
     List<Book> selectALl();
 
-    @Update("update book set pic_url =  #{urlList} where id =#{i}")
+    @Update("update book_new set pic_url =  #{urlList} where id =#{i}")
     void updateBookPicUrl(String urlList,Integer i);
+
+    List<Book> page(Integer ids);
 }

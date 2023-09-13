@@ -15,6 +15,12 @@ public class BookServiceImpl implements BookService {
     @Override
     public List<Book> selectALl() {
 
-        return bookMapper.selectALl();
+        return bookMapper.page(1);
+    }
+
+    @Override
+    public List<Book> page(Integer ids) {
+        Integer begin=(ids-1) * 20;
+        return bookMapper.page(begin);
     }
 }
