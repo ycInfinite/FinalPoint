@@ -18,8 +18,8 @@ public class Book {
     private String  secondType;
     private Double wordCounts;
     private String latestChapter;
-    private String briefIntroUrl;
+    private String briefIntro;
     private String picUrl;
-    private LocalDateTime createTime;
-    private LocalDateTime updateTime;
+    private String createTime;
+    private String updateTime;
 }
